@@ -14,10 +14,12 @@ function getCount() {
     });
 }
 
-// here we call the GET function instead of using the response data
+// here we call the GET function instead of using the response
+// a console.log will show the http code response
 function incrementCount() {
   axios.put(`http://localhost:5000/count`)
     .then((response) => {
+      console.log('response:', response);
       getCount();
     })
     .catch((error) => {
@@ -51,6 +53,7 @@ function postUsername() {
   };
   axios.post(`http://localhost:5000/username`, dataToSend)
     .then((response) => {
+      console.log('response:', response);
       getUsername();
       resetInputValue();
     })
