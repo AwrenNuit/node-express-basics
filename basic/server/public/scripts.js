@@ -1,8 +1,8 @@
 // ** start count code block **
 // axios assists with making http requests to the server
 // specify axios http method followed by server route
-// then will run if the request is successful
-// catch will run if there's an error
+// 'then' will run if the request is successful
+// 'catch' will run if there's an error
 // response.data is the data being sent back from the server
 function getCount() {
   axios.get(`http://localhost:5000/count`)
