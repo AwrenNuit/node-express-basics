@@ -34,7 +34,7 @@ Follow the code comments in [script.js](server/public/scripts.js) & [server.js](
   - `npm start` should say 'Listening on port: 5000'
 
 - View server route in browser
-  - Set up lines 31-33
+  - Set up lines 31-33 in server.js
   - Ctrl+C in command line to stop server (it doesn't auto-update when changes are made)
   - `npm start`
   - Navigate to `http://localhost:5000/taco` in your browser
