@@ -14,8 +14,8 @@ function getCount() {
     });
 }
 
-// here we call the GET function instead of using the response
-// a console.log will show the http code response
+// the GET function fetches the updated data
+// console.log will show the http code response
 function incrementCount() {
   axios.put(`http://localhost:5000/count`)
     .then((response) => {
